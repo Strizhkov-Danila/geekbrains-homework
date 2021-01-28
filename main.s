@@ -6,7 +6,7 @@ __ZStL19piecewise_construct:
 .lcomm __ZStL8__ioinit,1,1
 	.def	___main;	.scl	2;	.type	32;	.endef
 LC0:
-	.ascii "Hello World!!!\0"
+	.ascii "Hello Geekbrains!!! Hello Ivan Igorevic!!!\0"
 	.text
 	.globl	_main
 	.def	_main;	.scl	2;	.type	32;	.endef
