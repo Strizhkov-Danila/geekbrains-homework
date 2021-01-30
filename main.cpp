@@ -21,12 +21,11 @@ int main () {
 	f = 25.694;
 
 	void change();
+	
+	// Exerise 2
+	enum null_cross {Null = 89, Cross = 98};
+	
 
 	return 0;
 }
-
-
-
-
-
 
