@@ -76,11 +76,27 @@ int main () {
 	// ...
 	// ...
 
+	// Exercise 5
+	struct bit_fields {
+		union operand {
+			int i;
+			char ch;
+			float f;
+		}oper;
 
-
-
-
+		int is_Int : 1;
+		int is_Char : 1;
+		int is_Float : 1;
+	}field;
+	
+	typedef struct bit_fields Bit;
+	typedef union operand Operand;
+	
+	field.oper.ch = 'K';
+	field.oper.f = 2.718281828590;
+	field.is_Int = 0;
+	field.is_Char = 0;
+	field.is_Float = 1;
 
 	return 0;
 }
-
