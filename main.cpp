@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include "operands.cpp"
 
 using namespace std;
 
@@ -18,7 +19,10 @@ int main (int argc, char** argv) {
 	
 	cout << ((number > 21) ? (number - 21) : (42 - number * 2)) << endl;
 	
+	// Exercise 3
 	
+	result = e * ( f + (g / h) );
+ 	cout << "result = " << result;
 
 	return 0;
 }
