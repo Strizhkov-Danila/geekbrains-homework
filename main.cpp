@@ -35,6 +35,29 @@ int main (int argc, char** argv)
 		std :: cout << "true" << std :: endl;
 	else
 		std :: cout << "false" << std :: endl;
+	
+	// Exercise 4
+	int leapyear = 0;
+	for (int i = 0; i <= 10000; i++)
+	{
+		if (i % 400 == 0)
+		{
+			std :: cout << i << " is leap year" << std :: endl;
+			leapyear++;
+		}
+		if (i % 100 == 0)
+			continue;
+		else 
+		{ 
+			if (i % 4 == 0)
+			{
+				std :: cout << i << " is leap year" << std :: endl;
+				leapyear++;
+			}
+		}
+	}
+	std :: cout << "From 0 to 10000 there were " << leapyear << " leap years" << std :: endl;
+
 
 	return 0;
 }
