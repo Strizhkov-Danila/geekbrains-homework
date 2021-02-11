@@ -1,4 +1,5 @@
-#include <iostream> 
+#include <iostream>
+#include <cstdarg>
 #define ARRAY_SIZE 8
 
 void Print_Array    (int Array[]);
@@ -10,6 +11,8 @@ void Agregate_Array (int Array[]);
 bool Check_Balance  (int Array[]);
 
 void Shift_Elements (int Array[], int n);
+
+void Inverse_Array (int elem, ...);
 
 int main (int argc, char** argv)
 { 
@@ -47,8 +50,10 @@ int main (int argc, char** argv)
 	Shift_Elements(arr4, -3);
 
         Print_Array(arr4);
-
-
+	
+	// Exercise 5
+	
+	Inverse_Array (ARRAY_SIZE, 1, 1, 0, 1, 0, 0, 1, 0);
 
 	return 0;
 }
@@ -152,9 +157,19 @@ void Shift_Elements (int Array[], int n)
 
 }
 
+void Inverse_Array (int elem, ...)
+{
+	va_list lst;
+	
+	va_start (lst, elem);
+	
+	for (int i = 0; i < elem; i++)
+	{
+		std :: cout << (va_arg(lst, int) ^ 1) << " ";
+	}
 
-
-
+	va_end (lst);
+}
 
 
 
