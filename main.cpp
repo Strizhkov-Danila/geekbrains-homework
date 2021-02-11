@@ -1,7 +1,15 @@
 #include <iostream>
 #include <cstdarg>
 #define ARRAY_SIZE 8
+#include "Print_Array.cpp"
+#include "Inverse_Array.cpp"
+#include "Agregate_Array.cpp"
+#include "Check_Balance.cpp"
+#include "Shift_Elements.cpp"
 
+using namespace HW5;
+
+/*
 void Print_Array    (int Array[]);
 
 void Inverse_Array  (int Array[]);
@@ -13,6 +21,7 @@ bool Check_Balance  (int Array[]);
 void Shift_Elements (int Array[], int n);
 
 void Inverse_Array (int elem, ...);
+*/
 
 int main (int argc, char** argv)
 { 
@@ -57,7 +66,7 @@ int main (int argc, char** argv)
 
 	return 0;
 }
-
+/*
 void Print_Array (int Array[])
 {
 	for (int i = 0; i < ARRAY_SIZE; i++)
@@ -170,7 +179,7 @@ void Inverse_Array (int elem, ...)
 
 	va_end (lst);
 }
-
+*/
 
 
 
